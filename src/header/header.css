@@ -1,11 +1,18 @@
 .myheader{
-	background: red;
+	background: #fff;
+	width: 100%;
+	height: 100%;
 }
 .myheader li{
 	list-style: none;
 	float:left;
 	padding: 10px;
 	background: #d1d1d1;
+}
+.content{
+	width: 100%;
+	height: calc(100% - 20px);
+	width: 100%;
 }
 .child{
 	padding: 10px;

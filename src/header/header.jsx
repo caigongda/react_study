@@ -9,7 +9,7 @@ function List(props){
 }
 class Header extends Component{
 	render(){
-		const number=[1,2,3,4,5];
+		const number=[1,2,3,4];
 		const p={
 			a:"a",
 			b:"b"
@@ -22,10 +22,12 @@ class Header extends Component{
 			<div className="myheader">
 				<ul>{items}</ul>
 				<Link to="/b">aaaa</Link>
-				<Switch>
-					<Route path="/b" component={About}></Route>
-					<Route path="/a/:id" component={About}></Route>
-				</Switch>
+				<div className="content">
+					<Switch>
+						<Route path="/b" component={About}></Route>
+						<Route path="/a/:id" component={About}></Route>
+					</Switch>
+				</div>
 			</div>
 		)
 	}
